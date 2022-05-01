@@ -1,0 +1,21 @@
+.container {
+    &--custom {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        max-width: 720px;
+
+        @media #{$extra_extra_small_screen} {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+
+    &--inner {
+        padding-right: 0;
+        padding-left: 0;
+
+        @media #{$min_extra_small} {
+            max-width: 375px;
+        }
+    }
+}

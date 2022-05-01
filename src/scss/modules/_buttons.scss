@@ -1,0 +1,41 @@
+button {
+    transition: all 0.3s ease 0s;
+
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none;
+    }
+}
+
+.btn {
+    @extend .btn-rounded;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: 500;
+
+    &.btn-nowrap {
+        white-space: nowrap;
+    }
+
+    &.btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--text-color-lighten);
+        box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);
+
+        &:hover,
+        &:focus {
+            background-color: var(--primary-color-hover);
+            border-color: var(--primary-color-hover);
+            color: var(--text-color-lighten-hover);
+            box-shadow: none;
+        }
+
+        &:active {
+            background-color: var(--primary-color-pressed);
+            border-color: var(--primary-color-pressed);
+        }
+    }
+}

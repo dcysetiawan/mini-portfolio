@@ -1,0 +1,34 @@
+@mixin background_image($img_path, $position: center, $size: cover, $repeat: no-repeat) {
+    background: {
+        image: url($img_path);
+        position: $position;
+        size: $size;
+        repeat: $repeat;
+    }
+}
+
+@mixin flex($flex_direction: row, $align_items: flex-start, $justify_content: flex-start, $flex_wrap: nowrap) {
+    display: flex;
+    flex-direction: $flex_direction;
+    align-items: $align_items;
+    justify-content: $justify_content;
+    flex-wrap: $flex_wrap;
+}
+
+@mixin font($family, $size: var(--normal-font-size), $color: var(--body-color), $weight:400, $header: false) {
+    font: {
+        family: $family;
+        size: $size;
+        weight: $weight;
+    }
+
+    color: $color;
+
+    @if $header {
+        line-height: 120%;
+    }
+
+    @else {
+        line-height: 150%;
+    }
+}

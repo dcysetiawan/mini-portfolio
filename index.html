@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title and Description -->
+    <title>Mini Portfolio Site</title>
+    <meta name="description" content="Title | Description">
+
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="./dist/media/images/icons/favicon.png">
+
+    <!-- Remix Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./dist/plugins/bootstrap.min.css">
+
+    <!-- Our style -->
+    <link rel="stylesheet" href="./dist/css/style.bundle.css">
+</head>
+
+<body>
+    <div class="container container--custom position-relative">
+        <i class="theme-toggle-button ri-moon-line" id="theme-toggle-button"></i>
+        <header class="profile">
+            <div class="container container--inner">
+                <div class="profile-inner-wrapper">
+                    <!-- Profile Picture -->
+                    <div class="profile-picture reveal-top">
+                        <img class="profile-picture__image lazy-load" src="./dist/media/images/placeholder.png"
+                            data-src="./dist/media/images/profile.jpg" alt="Michèle Voclain">
+                    </div>
+
+                    <!-- Profile Name & Title -->
+                    <h1 class="profile__name reveal-top">Michèle Voclain</h1>
+                    <small class="profile__title reveal-top">Web Developer</small>
+
+                    <!-- Social Media -->
+                    <ul class="profile-social">
+                        <li class="profile-social__item reveal-top">
+                            <a href="#" class="profile-social__link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                        <li class="profile-social__item reveal-top">
+                            <a href="#" class="profile-social__link">
+                                <i class="ri-twitter-line"></i>
+                            </a>
+                        </li>
+                        <li class="profile-social__item reveal-top">
+                            <a href="#" class="profile-social__link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Profile Info -->
+                    <ul class="profile-info">
+                        <li class="profile-info__item reveal-top">
+                            <p class="profile-info__name">Years</p>
+                            <h3 class="profile-info__value">5</h3>
+                        </li>
+                        <li class="profile-info__item reveal-top">
+                            <p class="profile-info__name">Projects</p>
+                            <h3 class="profile-info__value">+120</h3>
+                        </li>
+                        <li class="profile-info__item reveal-top">
+                            <p class="profile-info__name">Clients</p>
+                            <h3 class="profile-info__value">52</h3>
+                        </li>
+                    </ul>
+                    <div class="profile-cta">
+                        <div class="profile-cta__item profile-cta__item--main reveal-top">
+                            <a href="#" class="btn btn-primary profile-cta__btn profile-cta__btn--main">Download CV
+                                <i class="ri-download-line"></i>
+                            </a>
+                        </div>
+                        <div class="profile-cta__item profile-cta__item--flex">
+                            <div class="profile-cta__item reveal-top">
+                                <a href="#" class="profile-cta__btn profile-cta__btn--square">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </div>
+                            <div class="profile-cta__item reveal-top">
+                                <a href="#" class="profile-cta__btn profile-cta__btn--square">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main-inner-wrapper">
+                <div class="container container--inner">
+                    <div class="tab-nav mb-5 reveal-top" data-tab="main-tab-content">
+                        <div class="tab-nav__item active" data-content="tab-about">
+                            <i class="tab-nav__icon ri-user-line"></i>
+                            <span class="tab-nav__text">About</span>
+                        </div>
+                        <div class="tab-nav__item" data-content="tab-projects">
+                            <i class="tab-nav__icon ri-dashboard-line"></i>
+                            <span class="tab-nav__text">Projects</span>
+                        </div>
+                        <div class="tab-nav__item" data-content="tab-skills">
+                            <i class="tab-nav__icon ri-focus-2-line"></i>
+                            <span class="tab-nav__text">Skills</span>
+                        </div>
+                        <div class="tab-nav__item" data-content="tab-experience">
+                            <i class="tab-nav__icon ri-briefcase-line"></i>
+                            <span class="tab-nav__text">Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content reveal-top" id="main-tab-content">
+                    <div class="tab-content__item show" id="tab-about">
+                        <div class="about">
+                            <div class="about__title">About Me</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat orci eget diam
+                                cursus tincidunt. Quisque at ultrices augue. <a href="#">Ut vel mauris ex</a>.</p>
+                            <p>Proin viverra nunc ultrices magna ultricies, nec elementum massa tempor. Fusce imperdiet
+                                volutpat mi tristique posuere. Ut pretium leo erat, id pretium augue eleifend non. Duis
+                                sed aliquet dolor. Aenean quis tincidunt nulla, molestie fringilla ligula. Ut blandit,
+                                elit euismod.</p>
+                            <p>
+                                Nam a lacus vehicula, aliquam augue sit amet, blandit augue. Integer ornare nibh vitae
+                                diam lacinia.</p>
+                        </div>
+                    </div>
+                    <div class="tab-content__item" id="tab-projects">
+                        <div class="projects">
+                            <!-- Project Item Portrait Mode -->
+                            <div class="projects__item projects__item--portrait">
+                                <article class="project project--portrait">
+                                    <img class="project__image lazy-load" src="./dist/media/images/placeholder.png"
+                                        data-src="./dist/media/images/project-1.jpg" alt="">
+                                    <div class="project__modal">
+                                        <small class="project__subtitle">Mobile App</small>
+                                        <h2 class="project__title">Travel App</h2>
+                                        <a href="#" class="btn btn-primary project__link">
+                                            <i class="ri-link"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Project Item with Double Item Inside -->
+                            <div class="projects__item">
+                                <div class="project-inner-container">
+                                    <div class="projects__item">
+                                        <article class="project">
+                                            <img class="project__image lazy-load"
+                                                src="./dist/media/images/placeholder.png"
+                                                data-src="./dist/media/images/project-3.jpg" alt="">
+                                            <div class="project__modal">
+                                                <small class="project__subtitle">Web Development</small>
+                                                <h2 class="project__title">Portfolio Website</h2>
+                                                <a href="#" class="btn btn-primary project__link">
+                                                    <i class="ri-link"></i>
+                                                </a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="projects__item">
+                                        <article class="project">
+                                            <img class="project__image lazy-load"
+                                                src="./dist/media/images/placeholder.png"
+                                                data-src="./dist/media/images/project-4.jpg" alt="">
+                                            <div class="project__modal">
+                                                <small class="project__subtitle">Mobile App</small>
+                                                <h2 class="project__title">Shoes Store</h2>
+                                                <a href="#" class="btn btn-primary project__link">
+                                                    <i class="ri-link"></i>
+                                                </a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Default Project Item -->
+                            <div class="projects__item">
+                                <article class="project">
+                                    <img class="project__image lazy-load" src="./dist/media/images/placeholder.png"
+                                        data-src="./dist/media/images/project-3.jpg" alt="">
+                                    <div class="project__modal">
+                                        <small class="project__subtitle">Mobile App</small>
+                                        <h2 class="project__title">Cryptocurrency Wallet</h2>
+                                        <a href="#" class="btn btn-primary project__link">
+                                            <i class="ri-link"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Default Project Item -->
+                            <div class="projects__item">
+                                <article class="project">
+                                    <img class="project__image lazy-load" src="./dist/media/images/placeholder.png"
+                                        data-src="./dist/media/images/project-5.jpg" alt="">
+                                    <div class="project__modal">
+                                        <small class="project__subtitle">Web Development</small>
+                                        <h2 class="project__title">NFT Marketplace</h2>
+                                        <a href="#" class="btn btn-primary project__link">
+                                            <i class="ri-link"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Project Item with Double Item Inside -->
+                            <div class="projects__item">
+                                <div class="project-inner-container">
+                                    <div class="projects__item">
+                                        <article class="project">
+                                            <img class="project__image lazy-load"
+                                                src="./dist/media/images/placeholder.png"
+                                                data-src="./dist/media/images/project-4.jpg" alt="">
+                                            <div class="project__modal">
+                                                <small class="project__subtitle">Web Development</small>
+                                                <h2 class="project__title">Website Builder</h2>
+                                                <a href="#" class="btn btn-primary project__link">
+                                                    <i class="ri-link"></i>
+                                                </a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="projects__item">
+                                        <article class="project">
+                                            <img class="project__image lazy-load"
+                                                src="./dist/media/images/placeholder.png"
+                                                data-src="./dist/media/images/project-5.jpg" alt="">
+                                            <div class="project__modal">
+                                                <small class="project__subtitle">Desktop App</small>
+                                                <h2 class="project__title">Book Store</h2>
+                                                <a href="#" class="btn btn-primary project__link">
+                                                    <i class="ri-link"></i>
+                                                </a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Item Portrait Mode -->
+                            <div class="projects__item projects__item--portrait">
+                                <article class="project project--portrait">
+                                    <img class="project__image lazy-load" src="./dist/media/images/placeholder.png"
+                                        data-src="./dist/media/images/project-2.jpg" alt="">
+                                    <div class="project__modal">
+                                        <small class="project__subtitle">Mobile App</small>
+                                        <h2 class="project__title">Money Management</h2>
+                                        <a href="#" class="btn btn-primary project__link">
+                                            <i class="ri-link"></i>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content__item" id="tab-skills">
+                        <div class="skills">
+                            <div class="skills__column">
+                                <div class="skills__title">Frontend Development</div>
+                                <div class="skills__list">
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">HTML</div>
+                                            <div class="skill__level">Advanced</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">Bootstrap</div>
+                                            <div class="skill__level">Basic</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">CSS/SCSS</div>
+                                            <div class="skill__level">Intermediate</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">React JS</div>
+                                            <div class="skill__level">Intermediate</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">JavaScript</div>
+                                            <div class="skill__level">Basic</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">jQuery</div>
+                                            <div class="skill__level">Basic</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__column">
+                                <div class="skills__title">Backend Development</div>
+                                <div class="skills__list">
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">PHP</div>
+                                            <div class="skill__level">Advanced</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">Node JS</div>
+                                            <div class="skill__level">Basic</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">Laravel</div>
+                                            <div class="skill__level">Intermediate</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">Express JS</div>
+                                            <div class="skill__level">Intermediate</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">MySQL</div>
+                                            <div class="skill__level">Basic</div>
+                                        </div>
+                                    </div>
+                                    <div class="skills__item skill">
+                                        <i class="skill__icon ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <div class="skill__name">MongoDB</div>
+                                            <div class="skill__level">Basic</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content__item" id="tab-experience">
+                        <div class="experiences">
+                            <div class="experience">
+                                <!-- Experience Line with Circle Border -->
+                                <div class="experience__line-column">
+                                    <div class="experience__line">
+                                    </div>
+                                </div>
+                                <!-- Experience Content -->
+                                <div class="experience__content-column">
+                                    <div class="experience__content">
+                                        <div class="experience__title">Web Developer Lead</div>
+                                        <div class="experience__company">Google</div>
+                                        <div class="experience__period">2020 Dec - Present</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience">
+                                <!-- Experience Line with Circle Border -->
+                                <div class="experience__line-column">
+                                    <div class="experience__line">
+                                    </div>
+                                </div>
+                                <!-- Experience Content -->
+                                <div class="experience__content-column">
+                                    <div class="experience__content">
+                                        <div class="experience__title">Web Developer</div>
+                                        <div class="experience__company">Facebook</div>
+                                        <div class="experience__period">2019 Jul - 2020 Nov</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience">
+                                <!-- Experience Line with Circle Border -->
+                                <div class="experience__line-column">
+                                    <div class="experience__line">
+                                    </div>
+                                </div>
+                                <!-- Experience Content -->
+                                <div class="experience__content-column">
+                                    <div class="experience__content">
+                                        <div class="experience__title">Mobile Developer</div>
+                                        <div class="experience__company">Microsoft</div>
+                                        <div class="experience__period">2018 Jan - 2019 May</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience">
+                                <!-- Experience Line with Circle Border -->
+                                <div class="experience__line-column">
+                                    <div class="experience__line">
+                                    </div>
+                                </div>
+                                <!-- Experience Content -->
+                                <div class="experience__content-column">
+                                    <div class="experience__content">
+                                        <div class="experience__title">Mobile Developer Internship</div>
+                                        <div class="experience__company">Microsoft</div>
+                                        <div class="experience__period">2017 Jul - 2017 Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- JQuery -->
+    <script src="./dist/plugins/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="./dist/plugins/bootstrap.bundle.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="./dist/plugins/scrollreveal-4.0.0.min.js"></script>
+
+    <!-- Our script -->
+    <script src="./dist/js/lazyload.js"></script>
+    <script src="./dist/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+$font_stack_1: "Poppins",
+sans-serif;
+$font_stack_2: "Poppins",
+sans-serif;
+
+$font_size_1: 3.5rem;
+$font_size_2: 2.5rem;
+$font_size_3: 2rem;
+$font_size_4: 1.5rem;
+$font_size_5: 1.25rem;
+$font_size_6: 1rem;
+$font_size_7: 0.875rem;
+$font_size_8: 0.75rem;
+
+$extra_extra_large_screen: 'only screen and (min-width: 1400px)';
+$extra_large_screen: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$large_screen: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$medium_screen: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$small_screen: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$extra_small_screen: 'only screen and (min-width: 375px) and (max-width: 575px)';
+$extra_extra_small_screen: 'only screen and (max-width: 374px)';
+
+$max_extra_large: 'only screen and (max-width: 1399px)';
+$max_large: 'only screen and (max-width: 1199px)';
+$max_medium: 'only screen and (max-width: 991px)';
+$max_small: 'only screen and (max-width: 767px)';
+$max_extra_small: 'only screen and (max-width: 575px)';
+
+$min_extra_large: 'only screen and (min-width: 1200px)';
+$min_large: 'only screen and (min-width: 992px)';
+$min_medium: 'only screen and (min-width: 768px)';
+$min_small: 'only screen and (min-width: 576px)';
+$min_extra_small: 'only screen and (min-width: 375px)';
+
+:root {
+    --hue: 196;
+    --sat: 100%;
+    --lig: 45%;
+
+    --primary-color: hsl(var(--hue), var(--sat), var(--lig));
+    --secondary-color: hsl(var(--hue), var(--sat), 57%);
+    --text-color: hsl(var(--hue), 8%, 16%);
+    --text-color-light: hsl(var(--hue), 8%, 48%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 0%, 100%);
+    --container-color: hsl(var(--hue), 0%, 100%);
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .9375rem;
+    --small-font-size: .8125rem;
+    --smaller-font-size: .75rem;
+
+    --primary-color-hover: hsl(var(--hue), var(--sat), calc(var(--lig) - 5%));
+    --primary-color-pressed: hsl(var(--hue), var(--sat), calc(var(--lig) - 10%));
+    --text-color-lighten-hover: hsl(var(--hue), 8%, 95%);
+
+    --gutter-x: 0.5rem;
+    --gutter-y: 1rem;
+
+    // Responsive typography
+    @media #{$min_large} {
+        --h1-font-size: 1.625rem;
+        --h2-font-size: 1.375rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .8125rem;
+    }
+}

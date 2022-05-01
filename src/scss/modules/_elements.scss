@@ -1,0 +1,83 @@
+/* Elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--body-color);
+}
+
+html,
+body {
+    @include font($font_stack_2, var(--normal-font-size), var(--text-color));
+}
+
+body {
+    background-color: var(--body-color);
+    min-height: 100vh;
+    transition: all 0.3s ease 0s;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    @include font($font_stack_2, var(--normal-font-size), var(--primary-color));
+    transition: all 0.3s ease 0s;
+    color: var(--primary-color);
+    text-decoration: none;
+    outline: none !important;
+
+    &:hover,
+    &:focus {
+        color: var(--primary-color-hover);
+        text-decoration: none;
+    }
+
+    &:active {
+        color: var(--primary-color-pressed);
+    }
+}
+
+small {
+    font-size: var(--small-font-size);
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+.reveal-top {
+    visibility: hidden;
+}
