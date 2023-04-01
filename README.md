@@ -44,6 +44,10 @@ For test release
 $ npm run build:dev
 ```
 
+## Preview
+
+![preview](/preview.png)
+
 ## Credits & References
 
 - All images from [Unsplash](https://unsplash.com)
